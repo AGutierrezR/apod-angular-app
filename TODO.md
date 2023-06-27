@@ -5,7 +5,7 @@
 - [x] Create Environment variable (API Key) (`ng generate environments`)
 - [x] Create Utils (Date utils)
 - [x] Create Model
-- [ ] Create NasaApodServices
+- [x] Create DataService (to fetch the API)
 - [ ] Create ApodPreviewComponent
 - [ ] Display the list
 - [ ] Add dynamic routes

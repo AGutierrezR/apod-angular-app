@@ -1,6 +1,6 @@
 interface APOD {
   date: string;
-  explnation: string;
+  explanation: string;
   title: string;
   url: string;
 }
