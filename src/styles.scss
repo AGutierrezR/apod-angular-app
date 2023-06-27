@@ -14,12 +14,11 @@ img {
   height: auto;
 }
 
-
 .mat-mdc-card-title {
   --mat-card-title-text-size: 1.125rem;
 }
 
- .wrapper {
+.wrapper {
   width: 90vw;
   width: clamp(16rem, 90vw, 70rem);
   margin-left: auto;
@@ -36,5 +35,9 @@ img {
     minmax(var(--grid-min-item-size, 16rem), var(--grid-max-item-size, 1fr))
   );
   gap: var(--gutter, 1rem);
+}
+
+.region {
+  padding-block: var(--region-space, 1.5rem);
 }
 
