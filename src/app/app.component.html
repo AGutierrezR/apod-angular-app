@@ -1,10 +1,1 @@
-<div class="wrapper">
-  <div class="apod-items auto-grid">
-    <app-apod-card
-      *ngFor="let apod of dataService.apods$ | async"
-      [title]="apod.title"
-      [date]="apod.date"
-      [url]="apod.url"
-    ></app-apod-card>
-  </div>
-</div>
+<router-outlet></router-outlet>

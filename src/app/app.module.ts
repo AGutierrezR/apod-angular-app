@@ -9,9 +9,10 @@ import { HttpClientModule } from '@angular/common/http';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { ApodCardComponent } from './shared/apod-card/apod-card.component';
+import { HomeComponent } from './pages/home/home.component';
 
 @NgModule({
-  declarations: [AppComponent, ApodCardComponent],
+  declarations: [AppComponent, ApodCardComponent, HomeComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,

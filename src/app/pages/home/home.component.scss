@@ -1,0 +1,9 @@
+.apod-items {
+  --grid-min-item-size: 100%;
+  --grid-max-item-size: 0.333333fr;
+  justify-content: center;
+
+  @media (min-width: 375px) {
+    --grid-min-item-size: 22.5rem;
+  }
+}
