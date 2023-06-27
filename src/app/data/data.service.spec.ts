@@ -5,6 +5,7 @@ import {
 } from '@angular/common/http/testing';
 
 import { DataService } from './data.service';
+import { HttpClient } from '@angular/common/http';
 
 describe('DataService', () => {
   let service: DataService;
@@ -24,6 +25,21 @@ describe('DataService', () => {
       url: 'https://apod.nasa.gov/apod/image/2306/NGC-6872-LRGB-rev-5-crop-CDK-1000-22-May-2023_1024.jpg',
     },
   ];
+
+  const APODSDIC = {
+    '2023-06-22': {
+      date: '2023-06-22',
+      explanation: 'Some explanation',
+      title: 'Stars and Dust across Corona Australis',
+      url: 'https://apod.nasa.gov/apod/image/2306/corona_aus1024.jpg',
+    },
+    '2023-06-23': {
+      date: '2023-06-23',
+      explanation: 'Some explanation',
+      title: 'Giant Galaxies in Pavo',
+      url: 'https://apod.nasa.gov/apod/image/2306/NGC-6872-LRGB-rev-5-crop-CDK-1000-22-May-2023_1024.jpg',
+    },
+  };
 
   beforeEach(() => {
     TestBed.configureTestingModule({
@@ -46,6 +62,15 @@ describe('DataService', () => {
   it('should return expected apods into the apods$ observable', () => {
     service.apods$.subscribe((apods) => {
       expect(apods).toEqual(APODS);
+    });
+
+    const req = httpTestingController.expectOne({ method: 'GET' });
+    req.flush(APODS);
+  });
+
+  it('should store an apods dictionary into the apodsDictionary$ observable', () => {
+    service.apodsDictionary$.subscribe((apodDic) => {
+      expect(apodDic).toEqual(APODSDIC);
     });
 
     const req = httpTestingController.expectOne({ method: 'GET' });
