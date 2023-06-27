@@ -2,7 +2,7 @@
 
 - [x] Create App
 - [x] Install Angular Material
-- [ ] Create Environment variable (API Key) (`ng generate environments`)
+- [x] Create Environment variable (API Key) (`ng generate environments`)
 - [ ] Create Utils (Date utils)
 - [ ] Create Model
 - [ ] Create NasaApodServices
