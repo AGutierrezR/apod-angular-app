@@ -1,0 +1,10 @@
+<mat-card class="apod-card">
+  <mat-card-header>
+    <mat-card-title>{{ title }}</mat-card-title>
+    <mat-card-subtitle>{{ date }}</mat-card-subtitle>
+  </mat-card-header>
+  <img mat-card-image [src]="url" [alt]="'Photo of ' + title" />
+  <mat-card-actions>
+    <button mat-button>Read More</button>
+  </mat-card-actions>
+</mat-card>

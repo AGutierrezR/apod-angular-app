@@ -6,7 +6,7 @@
 - [x] Create Utils (Date utils)
 - [x] Create Model
 - [x] Create DataService (to fetch the API)
-- [ ] Create ApodPreviewComponent
-- [ ] Display the list
+- [x] Create ApodCardComponent
+- [x] Display the list
 - [ ] Add dynamic routes
 - [ ] Display ApodComponent
