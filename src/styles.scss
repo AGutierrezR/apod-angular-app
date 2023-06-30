@@ -15,9 +15,10 @@ img {
 }
 
 .mat-mdc-card-title {
-  --mat-card-title-text-size: 1.125rem;
+  --mat-card-title-text-size: 1rem;
 }
 
+// Composition classes
 .wrapper {
   width: 90vw;
   width: clamp(16rem, 90vw, 70rem);
@@ -40,4 +41,3 @@ img {
 .region {
   padding-block: var(--region-space, 1.5rem);
 }
-
