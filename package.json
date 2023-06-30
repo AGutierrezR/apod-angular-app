@@ -4,9 +4,11 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "ng build --base-href /apod-angular-app/",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "pregh-pages": "npm run build",
+    "gh-pages": "gh-pages -d dist/nasa-apod -b gh-page"
   },
   "private": true,
   "dependencies": {
